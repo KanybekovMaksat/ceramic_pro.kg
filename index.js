@@ -1,18 +1,4 @@
-const swiper = new Swiper('.quality__swiper', {
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-
+AOS.init();
 let mobile = document.querySelector('.header__mobile')
 let headerHeight = document.querySelector('.header').scrollHeight
 
@@ -34,3 +20,31 @@ window.addEventListener('scroll', () => {
     document.querySelector('.header').classList.add('active')
   else document.querySelector('.header').classList.remove('active')
 })
+
+
+var slider = new Swiper('.swiper-container', {
+  speed: 500,
+  effect: 'fade',
+   
+  autoplay: {
+    delay: 1800,
+    disableOnInteraction: false,
+    },
+});
+
+const swiper = new Swiper('.quality__slider', {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 1,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+    }
+  }
+});
