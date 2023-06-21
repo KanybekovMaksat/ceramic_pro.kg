@@ -1,17 +1,27 @@
 AOS.init()
-let mobile = document.querySelector('.header__mobile')
-let headerHeight = document.querySelector('.header').scrollHeight
+let mobile = document.querySelector('.header__mobile');
+let headerHeight = document.querySelector('.header').scrollHeight;
 
 document
   .querySelector('.header__burger-menu')
   .addEventListener('click', function () {
-    mobile.classList.add('active')
-  })
+    mobile.classList.add('active');
+  });
+
 document
   .querySelector('.header__mobile-burger')
   .addEventListener('click', function () {
-    mobile.classList.remove('active')
-  })
+    mobile.classList.remove('active');
+  });
+
+let mobileNavLinks = document.querySelectorAll('.header__mobile .header__link');
+
+mobileNavLinks.forEach(function (link) {
+  link.addEventListener('click', function () {
+    mobile.classList.remove('active');
+  });
+});
+
 
 window.addEventListener('scroll', () => {
   let scrollPos = window.pageYOffset
