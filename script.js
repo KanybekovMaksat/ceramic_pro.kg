@@ -1,4 +1,4 @@
-AOS.init();
+AOS.init()
 let mobile = document.querySelector('.header__mobile')
 let headerHeight = document.querySelector('.header').scrollHeight
 
@@ -16,21 +16,20 @@ document
 window.addEventListener('scroll', () => {
   let scrollPos = window.pageYOffset
   let pos = document.getElementById('intro').scrollHeight
-  if (scrollPos > pos - headerHeight)
+  if (scrollPos > pos - headerHeight - 100)
     document.querySelector('.header').classList.add('active')
   else document.querySelector('.header').classList.remove('active')
 })
 
-
 var slider = new Swiper('.swiper-container', {
   speed: 500,
   effect: 'fade',
-   
+
   autoplay: {
     delay: 1800,
     disableOnInteraction: false,
-    },
-});
+  },
+})
 
 const swiper = new Swiper('.quality__slider', {
   loop: true,
@@ -45,6 +44,6 @@ const swiper = new Swiper('.quality__slider', {
   breakpoints: {
     768: {
       slidesPerView: 1,
-    }
-  }
-});
+    },
+  },
+})
