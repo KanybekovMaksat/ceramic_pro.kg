@@ -1083,3 +1083,26 @@ body {
     height: 1950px !important;
   }
 }
+
+.copyright{
+  width: 100%;
+  height: auto;
+  background-color: #e91d8f;
+}
+.copyright__content{
+  display: flex;
+  justify-content: space-between;
+}
+.copyright__title, .copyright__text{
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+@media screen and (min-width:1200px) {
+  .copyright__content{
+    padding: 10px 0px;
+  }
+  .copyright__title, .copyright__text{
+    font-size: 14px;
+  } 
+}

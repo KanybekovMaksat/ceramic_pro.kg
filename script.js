@@ -57,3 +57,9 @@ const swiper = new Swiper('.quality__slider', {
     },
   },
 })
+
+
+
+
+var currentYear = new Date().getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
