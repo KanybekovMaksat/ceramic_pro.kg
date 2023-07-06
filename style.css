@@ -433,9 +433,9 @@ body {
   overflow-x: hidden;
 }
 @media screen and (max-width: 480px) {
-  .advantages {
+  /* .advantages {
     height: 1890px !important;
-  }
+  } */
   .intro__title {
     bottom: 100px;
   }
@@ -850,6 +850,12 @@ body {
     height: 1700px;
     clip-path: polygon(0% 0%, 100% 0, 100% 92%, 50% 100%, 0 92%);
   }
+  .advantages__content-wrapper,
+  .advantages__content-bottom,
+  .advantages__content,
+  .advantages__box {
+    overflow: hidden;
+  }
 
   .advantages__bottom-img {
     height: 80px;
@@ -871,6 +877,12 @@ body {
   .advantages__box {
     height: 1850px;
     clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+  }
+  .advantages__content-wrapper,
+  .advantages__content-bottom,
+  .advantages__content,
+  .advantages__box {
+    overflow: hidden;
   }
   .advantages__image {
     top: 1700px;
@@ -986,6 +998,7 @@ body {
   .container {
     max-width: none;
     padding: 16px;
+    overflow: hidden;
   }
 
   .comparison__content-title {
@@ -1017,17 +1030,23 @@ body {
   .advantages__image {
     max-width: 480px;
     object-fit: cover;
-    height: 400px;
-    top: 1470px;
+    height: 270px;
+    top: 1800px;
   }
 
   .advantages__box {
-    height: 1700px;
+    height: 1900px;
     clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  }
+  .advantages__content-wrapper,
+  .advantages__content-bottom,
+  .advantages__content,
+  .advantages__box {
+    overflow: hidden;
   }
 
   .advantages__btn {
-    top: 1850px;
+    top: 2020px;
     font-size: 30px;
   }
 
@@ -1080,29 +1099,31 @@ body {
 
 @media screen and (max-width: 390px) {
   .advantages {
-    height: 1950px !important;
+    height: 2100px !important;
   }
 }
 
-.copyright{
+.copyright {
   width: 100%;
   height: auto;
   background-color: #e91d8f;
 }
-.copyright__content{
+.copyright__content {
   display: flex;
   justify-content: space-between;
 }
-.copyright__title, .copyright__text{
+.copyright__title,
+.copyright__text {
   font-size: 12px;
   font-weight: 400;
   color: #ffffff;
 }
-@media screen and (min-width:1200px) {
-  .copyright__content{
+@media screen and (min-width: 1200px) {
+  .copyright__content {
     padding: 10px 0px;
   }
-  .copyright__title, .copyright__text{
+  .copyright__title,
+  .copyright__text {
     font-size: 14px;
-  } 
+  }
 }
