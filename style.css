@@ -317,6 +317,18 @@ body {
     height: 60vh;
   }
 }
+@media screen and (max-width: 480px) {
+  .intro__title {
+    font-size: 30px;
+  }
+  .intro__subtitle {
+    font-size: 22px;
+    margin-top: 5px;
+  }
+  .intro__logo {
+    height: 35px;
+  }
+}
 .products {
   margin-top: 30px;
   overflow-x: hidden;
@@ -383,16 +395,6 @@ body {
   overflow-x: hidden;
 }
 @media screen and (max-width: 480px) {
-  /* .advantages {
-    height: 1890px !important;
-  } */
-  .intro__title {
-    bottom: 100px;
-  }
-  .intro__logo {
-    height: 35px;
-  }
-
   .products__zone > .products__text {
     display: block;
   }
@@ -946,6 +948,12 @@ body {
     max-width: 140px;
     padding: 10px;
     font-size: 14px;
+  }
+  .intro__slide-img {
+    height: 300px;
+  }
+  .intro__subtitle {
+    font-size: 16px;
   }
 }
 .copyright {
