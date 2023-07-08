@@ -18,7 +18,7 @@ body {
 }
 
 /* Header */
-чё
+
 .header {
   height: 100px;
   width: 100vw;
@@ -846,6 +846,12 @@ body {
 }
 
 @media screen and (max-width: 420px) {
+  .intro__slide-img{
+    height: 350px;
+  }
+  .intro__subtitle{
+    font-size: 18px   ;
+  }
   .advantages__box {
     height: 1700px;
     clip-path: polygon(0% 0%, 100% 0, 100% 92%, 50% 100%, 0 92%);
@@ -874,6 +880,12 @@ body {
   }
 }
 @media screen and (max-width: 360px) {
+  .intro__slide-img{
+    height: 300px;
+  }
+  .intro__subtitle{
+    font-size: 16px;
+  }
   .advantages__box {
     height: 1850px;
     clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
